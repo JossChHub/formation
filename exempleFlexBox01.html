@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Exemple FlexBox 1</title>
+    <style>
+        .conteneur-flexible {
+            width: 80%;
+            height: 500px;
+            margin: 10px auto;
+            background-color: rgb(238, 139, 73);
+            color: black;
+            border: 2px solid rgb(70, 50, 22);
+            display: flex;
+            box-sizing: border-box;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .element-flexible {
+            flex: 0 0 20%;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 20%; */
+            width: 30%;
+            height: 40%;
+            background-color: rgb(241, 204, 155);
+            border: 1px solid blue;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        /* .num1{order: 1;}
+        .num2{order: 2;}
+        .num3{order: 3;} */
+        /* .plusGrand{
+            flex : 0 0 80%;
+        } */
+        .fg1 {flex-grow: 1}
+        .fg3 {flex-grow: 3}
+        .ef70{flex-basis: 70%;}
+        .fs0{flex-shrink: 0;}
+        .fs1{flex-shrink: 1;}
+        .fs4{flex-shrink: 4;}
+
+    </style>
+</head>
+
+<body><a href="index.html"><i class='fas fa-home'></i></a>
+    <div class="conteneur-flexible">
+        <div class="element-flexible num2 ">1</div>
+        <div class="element-flexible num3 ">2</div>
+        <div class="element-flexible num1 ">3</div>
+        <div class="element-flexible num2 ">4</div>
+    </div>
+</body>
+
+</html>

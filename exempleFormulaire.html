@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Exemple formulaire</title>
+    <style>
+        label {
+            width: 80px;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="GET" action="" id="formPersonne">
+        <fieldset>
+            <legend>Infos persos</legend>
+        <label>Nom</label>
+        <input name="nom" type="text" title="Votre nom" value="dupont"/>
+        <br><br>
+        <label>Prénom</label>
+        <input name="prenom" type="text" placeholder="Votre nom"/>
+        <br><br>
+        <label>Age</label>
+        <input name="age" type="nomber" form="formPersonne" min="0 max="18"/>
+        <br><br>
+        <label>CV</label>
+        <input name="CV" type="file"/>
+        <br><br>
+        <input type="submit" value="Envoyer les données" />
+    </fieldset>
+    </form>
+
+</body>
+
+</html>
